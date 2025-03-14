@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <div id="homePage">
+        <h1 id="title">A térképész</h1>
+        <details>
+            <summary>Játékleírás</summary>
+            <div id="descriptions">
+            <p class="descript">Nekeresdország szomszédjában egy hatalmas ország, a Burgonyák Birodalom helyezkedik el,
+                amelynek sok része mind a mai napig ismeretlen és lakatlan. Ennek uralkodója, Pityóka császárnő
+                elrendelte ezeknek a területeknek a feltérképezését és benépesítését. Első lépésként a táj felderítésére
+                Téged mint birodalmi térképészt bízott meg. A császárnő küldetésekkel határozza meg, hogy milyen tájakat
+                szeretne látni a birodalmában. Segíts neki, minél jobban teljesíteni a kívánságait, így a Te hírneved is
+                ennek megfelelően növekedhet!</p>
+            <p class="descript">Ebben az egyszemélyes játékban egy 11x11-es négyzetrácsos térképre kell lehelyezni
+                különböző alakzatú, különböző tereptípusú térképelemeket. Minden elemhez tartozik egy időérték (1 vagy
+                2), a játék 28 időegységből áll. A játék végén (vagy közben) a négyzetrács aktuális állapota alapján
+                kell pár ellenőrzést (küldetést) elvégezni, és ez alapján alakul ki a végső pontszám.</p>
+            </div>
+        </details>
+        <div id="buttonContainer">
+            <button id="goToGameButton">Játék</button>
+        </div>
+    </div>
+
+    <div id="gamePage">
+        <div class="flexRow">
+            <div class="flexCol">
+                <div id="tableDiv">
+                    <table id="table"></table>
+
+                </div>
+            </div>
+            <div class="flexCol" id="rightColumn">
+                <div class="flexRowMultiCol">
+                    <div class="flexCol">
+                        <div id="currentElementDiv">
+                            <table id="currentElementTable"></table>
+                            <div id="neededTimeDiv">Szükséges idő: <span id="neededTime"></span></div>
+
+                            <button id="rotateButton">Forgatás</button>
+                            <button id="mirrorButton">Tükrözés</button>
+                        </div>
+                    </div>
+                    <div class="flexCol">
+                        <div id="spring">
+                            <h3>Tavasz</h5>
+                            <p><span id="springPoints">0</span> pont</p>
+                        </div>
+                    </div>
+                    <div class="flexCol">
+                        <div id="summer">
+                            <h3>Nyár</h5>
+                            <p><span id="summerPoints">0</span> pont</p>
+
+                        </div>
+                    </div>
+                    <div class="flexCol">
+                        <div id="autumn">
+                            <h3>Ősz</h5>
+                            <p><span id="autumnPoints">0</span> pont</p>
+                        </div>
+                    </div>
+                    <div class="flexCol">
+                        <div id="winter">
+                            <h3>Tél</h5>
+                            <p><span id="winterPoints">0</span> pont</p>
+                        </div>
+                    </div>
+                    <div class="flexCol">
+                        <div id="timeDiv">Évszakból eltelt idő:<br><span id="time"></span>/7</div>
+                    </div>
+                </div>
+                <div class="flexRow">
+                    <div class="flexCol">
+                        <div id="aMissionDiv">
+                            <img id="aMissionImg" src="">
+                            <div id="aMissionPoints" class="spanPoints">0 pont</div>
+                        </div>
+                    </div>
+                    <div class="flexCol">
+                        <div id="bMissionDiv">
+                            <img id="bMissionImg" src="">
+                            <div id="bMissionPoints" class="spanPoints">0 pont</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexRow">
+                    <div class="flexCol">
+                        <div id="cMissionDiv">
+                            <img id="cMissionImg" src="">
+                            <div id="cMissionPoints" class="spanPoints">0 pont</div>
+                        </div>
+                    </div>
+                    <div class="flexCol">
+                        <div id="dMissionDiv">
+                            <img id="dMissionImg" src="">
+                            <div id="dMissionPoints" class="spanPoints">0 pont</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="endGameButton">Befejezés</button>
+        <div id="summaryDiv">
+            <h1>Játék vége!</h1>
+            <p id="reasonOfEnd"></p>
+            <p>Az összesített pontszámod: <span id="totalPoints"></span> küldetéspont + <span id="bonusPoints"></span> bónuszpont = <b><span id="summarizedPoints"></span> pont</b></p>
+        </div>
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

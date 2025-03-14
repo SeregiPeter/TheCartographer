@@ -1,0 +1,200 @@
+body {
+  background-image: url("bg2.png");
+  background-size: cover;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+#homePage h1 {
+  text-align: center;
+}
+#homePage details summary {
+  text-align: center;
+}
+
+#homePage #buttonContainer {
+  text-align: center;
+}
+
+#table {
+  width: auto;
+}
+
+td {
+  width: 45px !important;
+  height: 45px !important;
+  box-sizing: border-box;
+  border-radius: 14px;
+  border: 3px solid rgba(255, 0, 0, 0);
+}
+
+img {
+  width: 380px;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+.flexCol {
+  margin: 10px;
+}
+
+.flexRowMultiCol {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.inActive {
+  filter: opacity(40%);
+}
+
+#timeDiv {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 7px;
+}
+
+#endGameButton {
+  float: left;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+#spring {
+  background-color: rgb(145, 224, 93);
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 7px;
+  font-size: 15px;;
+  width: 55px;
+}
+#summer {
+  background-color: rgb(238, 198, 76);
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 7px;
+  font-size: 15px;
+  width: 55px;
+}
+#autumn {
+  background-color: rgb(122, 92, 44);
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 7px;
+  font-size: 15px;
+  width: 55px;
+}
+#winter {
+  background-color: rgb(115, 189, 233);
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 7px;
+  font-size: 15px;
+  width: 55px;
+}
+
+button {
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid black;
+}
+
+#neededTimeDiv {
+  padding: 5px;
+  background-color: aliceblue;
+  border-radius: 7px;
+}
+
+#aMissionPoints {
+  padding: 5px;
+  background-color: #363636;
+  border-radius: 7px;
+  width: 55px;
+  color:aliceblue;
+  font-size: 15px;
+  text-align: center;
+}
+#bMissionPoints {
+  padding: 5px;
+  background-color: #363636;
+  border-radius: 7px;
+  width: 55px;
+  color:aliceblue;
+  font-size: 15px;
+  text-align: center;
+}
+#cMissionPoints {
+  padding: 5px;
+  background-color: #363636;
+  border-radius: 7px;
+  width: 55px;
+  color:aliceblue;
+  font-size: 15px;
+  text-align: center;
+}
+#dMissionPoints {
+  padding: 5px;
+  background-color: #363636;
+  border-radius: 7px;
+  width: 55px;
+  color:aliceblue;
+  font-size: 15px;
+  text-align: center;
+}
+
+#summaryDiv {
+  text-align: center;
+  margin-top: 35px;
+  background-color: aliceblue;
+  width: 500px;
+  border-radius: 20px;
+  padding: 15px;
+}
+#container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+summary {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.descript {
+  font-size: 25px;
+  padding: 20px;
+}
+
+#descriptions {
+  background-color: aliceblue;
+  border-radius: 30px;
+}
+
+#goToGameButton {
+  padding: 5px;
+  border-radius: 7px;
+  border: 1px solid black;
+  font-size: 30px;
+}
+
+#tableDiv, #currentElementDiv {
+  background-color: rgba(231, 196, 113, 0.8);
+  border-radius: 20px;
+  padding: 5px;
+}
